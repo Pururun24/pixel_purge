@@ -1,7 +1,7 @@
 --[[
     -- 4 марта 2025
     -- Pururun
-    -- version 0.4
+    -- version 0.5
 --]]
 
 function _init()

@@ -1,10 +1,20 @@
 --[[
     -- 4 марта 2025
     -- Pururun
-    -- version 0.5
+    -- version 0.6
 --]]
 
 function _init()
+    cartdata("pur_pixelpurge_0_5") --id
+
+    buls = {}
+    bul = {}
+    bul_direc = "right"
+    time_shoot = 30
+
+    money_player = dget(0)
+
+
     palt(0, false)
     palt(12, true)
 
@@ -12,12 +22,18 @@ function _init()
 
     score = 0
 
+    falg = false
+
     characters = {
         antonio = Antonio(),
+        imelda = Imelda()
     }
 
     -- Подключаем первого игрока
-    p1 = characters.antonio
+    p1 = characters.imelda
+
+    -- добавить пулю
+    -- add(buls, p1.weapon)
 
     init_bat()
     -- t - просто считает кадры

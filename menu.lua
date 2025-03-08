@@ -53,6 +53,7 @@ end
 
 function draw_main_menu()
     cls(1)
+    print("you money:" .. money_player, 36, 32, 6)
     print("pixel purge", 40, 8, 6)
     print("version:0.5", 72, 120, 6)
     print("start game", 42, 56, menu_color_start)

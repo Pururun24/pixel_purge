@@ -11,6 +11,11 @@ function Enemy()
     enemy.anim = "idle"
     enemy.flip_x = false
 
+    -- Столкновения врага с объектом
+    enemy.isCollision = function(self, b)
+        return isCollision(self, b)
+    end
+
     -- Спавн врагов от игрока
     enemy.spawn = function(self, player)
         -- Позиция
@@ -88,7 +93,7 @@ function Bat()
         end
     end
 
-
+    -- Основные функции для перемешение мыши и для каждого объекта
     bat.update = function(self)
         self:movement(p1)
     end
